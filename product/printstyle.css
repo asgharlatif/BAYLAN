@@ -1,0 +1,102 @@
+
+
+BODY
+{
+    FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.LabelClass span
+{
+    font-weight: bold;
+  
+}
+
+.ValueClass
+{
+    
+}
+
+.ac0 {
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : normal; 
+	BORDER-RIGHT:  #6487db 1px solid;
+    BORDER-TOP:    #6487db 1px solid;
+	BORDER-LEFT:   #6487db 1px solid; 
+    BORDER-BOTTOM: #6487db 1px solid
+}
+.ac00 {
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 18px; 
+font-weight : bold; 
+	BORDER-RIGHT:  #6487db 1px solid;
+    BORDER-TOP:    #6487db 1px solid;
+	BORDER-LEFT:   #6487db 1px solid; 
+    BORDER-BOTTOM: #6487db 1px solid
+}
+.ac1 {
+	font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : bold; 
+	BORDER-RIGHT: #6487db 1px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 1px solid; 
+    BORDER-BOTTOM:#6487db 1px solid
+}
+.ac2 {
+	BORDER-RIGHT: #6487db 0px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 1px solid; 
+    BORDER-BOTTOM:#6487db 0px solid;
+}
+.ac3 {
+	font-family : Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : bolder; 
+	BORDER-RIGHT: #6487db 0px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 1px solid; 
+    BORDER-BOTTOM:#6487db 1px solid;
+}
+.ac4 {
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : normal;
+	BORDER-RIGHT: #6487db 0px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 0px solid; 
+    BORDER-BOTTOM:#6487db 1px solid;
+}
+.ac5 {
+font-family : Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : bolder; 
+	BORDER-RIGHT: #6487db 1px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 1px solid; 
+    BORDER-BOTTOM:#6487db 0px solid;
+}
+.ac6 {
+font-family : Arial, Helvetica, sans-serif; 
+font-size : 11px;
+	BORDER-RIGHT: #6487db 1px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 0px solid; 
+    BORDER-BOTTOM:#6487db 1px solid;
+}
+.ac7 {
+	BORDER-RIGHT: #6487db 1px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 0px solid; 
+    BORDER-BOTTOM:#6487db 0px solid;
+}
+.ac11 {
+	font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 9px; 
+font-weight : bold; 
+	BORDER-RIGHT: #6487db 1px solid;
+    BORDER-TOP:   #6487db 0px solid;
+	BORDER-LEFT:  #6487db 1px solid; 
+    BORDER-BOTTOM:#6487db 1px solid
+}

@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+   <table width="350px" border="0" cellspacing="0" cellpadding="5" height="56" style="border-color:red" >
+                   
+     <tr>
+         <td width="100%" height="29">
+             <table border="0" cellspacing="0" cellpadding="0" height="100" width="100%">
+                 <tr>
+                     <td class="tborder1" height="30" width="17%" align="center">
+                         <span class="text6">
+                             <% response.write rsdata("productID")%></span>
+                     </td>
+                     <td class="tborder2" width="17%">
+                         <span class="text style4">Model/Prod.ID:</span>
+                     </td>
+                     <td class="tborder2" colspan="3">
+                         <span class="text8">
+                             <%=rsData("itemcode")%></span>
+                     </td>
+                     <%if not isnull(rsdata("image"))then %>
+                     <%else%>
+                 </tr>
+                 <%end if%></table>
+         </td>
+     </tr>
+     <tr>
+         <%if  trim(rsdata("picturethumb"))  <> "" and trim(rsdata("picturethumb")) <> "PIMAGES\" then%>
+         <td class="tborder3" width="17%" height="75%" rowspan="3">
+             <div align="center">
+                 <img id="<%=trim(rsData("PRODUCTID"))%>" alt="Click Picture Enlarge" onerror="onImgErrorSmall(this)"
+                     src="<%=trim(rsData("picturethumb"))%>" pbsrcnl="<%=trim(rsData("picturelarge"))%>"
+                     pbcaption="<a href='product.asp?pID=<%=rsdata("productID")%>'>View Product Details</a>"
+                     class="PopBoxImageSmall" pbshowrevertbar="true" pbshowreverttext="true" pbshowrevertimage="true"
+                     pbreverttext="Click to Shrink" onclick="Pop(this,50,'PopBoxImageLarge');" />
+                 <%else%>
+                 <td class="tborder01" width="17%" height="75%" rowspan="3">
+                     <%end if%>
+                 </td>
+     </tr>
+                   
+                  
+                   <tr>
+                     
+                       <td class="tborder5" colspan="3" height="70">
+                           <span class="text-heading">
+                               <%=(rsData("description"))%></span>
+                       </td>
+                   </tr>
+                   <%
+                        dim driver, ddfname
+                        ddfname = Server.MapPath(rsdata("driver"))
+                        Set driver = CreateObject("Scripting.FileSystemObject") 
+                        If driver.FileExists(ddfname) Then
+                   %>
+                   <tr>
+                   <td class="tborder3" width="17%" height="30" align="center">
+                       <img src="" <%=rsData("image")%>border="0" align="middle">
+                   </td>
+                   <%'  Response.Write("Available")
+ELSE
+                   %>
+                   <td class="style9" height="30" width="17%">
+                       <img src="images/SPACER.GIF" border="0">
+                       <span class="text style4">Warranty:</span>
+                   </td>
+                   <% ' Response.Write("Not Available")
+End If 
+                   %>
+                   <td class="tborder4" height="30" width="17%">
+                      
+                           <%=rsData("warranty")%></td>
+                  
+                   </tr>
+                   <tr>
+                   <td class="tborder7" width="17%" height="30">
+                       <div align="center">
+                           <a href='product.asp?pID=<%=rsdata("productID")%>'><span class="text style4" style="color: #FF0000"
+                               title="Click Here More Detail">More Detail....</span></a></div>
+                   </td>
+                   <td class="tborder6" width="17%" height="30">
+                       <span class="text5 style4">Price:</span>
+                   </td>
+                   <%if Request.Cookies("isDealer") <> "" AND Request.Cookies("TypeName") ="Reseller"  OR Request.Cookies("TypeName") ="Cable Net" then %>
+                   <% if rsdata("pga") = "0" or trim(price) = "0" then %>
+                   <td colspan="2" height="30" class="text">
+                       Signup / Call 02132764900
+                   </td>
+                   <%else%>
+                   <td class="tborder6" height="30">
+                       <span class="text">Rs.<%=formatnumber(trim(rsdata("pga")),2)%></span>
+                   </td>
+                   <%end if%>
+                  
+                   <%end if%>
+                   </tr>
+                   <tr valign="centre">
+                       <%
+Dim fso, file, FName
+FName = Server.MapPath(rsdata("longdescription"))
+Set fso = Server.CreateObject ("Scripting.FileSystemObject")
+If fso.FileExists(FName) Then%>
+                       <td class="tborder1" colspan="5" height="30">
+                           <a id="ID<%=trim(rsData("productid"))%>" href="javascript:toggle('PID<%=trim(rsData("productid"))%>','ID<%=trim(rsData("productid"))%>');"
+                               style="cursor: hand">
+                               <img src="plus.gif" border="0" title="Expand/Collapse" />&nbsp;<img src="images/readmore.gif"
+                                   border="0" align="middle" /></a>
+                           <div id="PID<%=trim(rsData("productid"))%>" style="display: none;">
+                               <%Response.Write GetHTMLFile(request("ldesc"))%></div>
+                           <a class="text" href="<%=(rsdata("driver"))%>">
+                               <img src="images/drivers.gif" alt="Download Driver" border="0"></a><a class="text"
+                                   href="<%=rsData("datasheet")%>"><img src="images/Datasheet.GIF" alt="Data Sheet"
+                                       border="0" align="absmiddle"></a>
+                       </td>
+                       <%'  Response.Write("Available")
+ELSE
+                       %>
+                       <% ' Response.Write("Not Available")
+End If 
+                       %>
+                   </tr>
+               </table>
+
+</body>
+</html>

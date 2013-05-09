@@ -1,0 +1,37 @@
+REDIRECT default.asp
+WIDTH 728
+HEIGHT 90
+BORDER 0
+*
+http://www.arshi.com/Abanners/BAYLAN.gif
+http://www.arshi.com
+-
+40
+http://www.arshi.com/Abanners/Cellpower.gif
+http://www.bbl.com.pk
+CELLPOWER
+10
+Abanners/AVAYA.jpg
+http://www.bbl.com.pk
+AVAYA
+25
+Abanners/NetChe.jpg
+http://www.bbl.com.pk
+NETCHE
+40
+Abanners/PROMAG.jpg
+http://www.bbl.com.pk
+PROMAG TIME ATTENDANCE
+4
+banners/Reseller.jpg
+http://www.bbl.com.pk
+RESELLER
+8
+banners/SoleDistributor.jpg
+http://www.bbl.com.pk
+LOGOS
+9
+banners/LogoAMP.jpg
+http://www.bbl.com.pk
+AMP
+1

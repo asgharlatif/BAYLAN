@@ -1,0 +1,43 @@
+body {
+
+}
+
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.style2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFF;
+}
+.style3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	}
+
+.style4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.text4
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px
+}
+
+
+.t {background: url(../images/top.gif) 0 0 repeat-x; width: 800px}
+.b {background: url(../images/bottom1.gif) 0 100% repeat-x}
+.l {background: url(../images/leftside.gif) 0 0 repeat-y}
+.r {background: url(../images/rightside.gif) 100% 0 repeat-y}
+.bl {background: url(../images/bottom-left.gif) 0 100% no-repeat}
+.br {background: url(../images/bottom-right.gif) 100% 100% no-repeat}
+.tl {background: url(../images/top-left.gif) 0 0 no-repeat}
+.tr {background: url(../images/top-right.gif) 100% 0 no-repeat; padding-bottom:30px} 
+.tp {background: url(../images/bac.gif) 0 0 no-repeat}

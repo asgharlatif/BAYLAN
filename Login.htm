@@ -1,0 +1,132 @@
+<html>
+<head>
+<% on error resume next%>
+<script Language="JavaScript">
+                     <!--
+                     function Form1_Validator(theForm)
+                     {
+
+                     var alertsay = ""; 
+                     
+                     if (theForm.p_dealerid.value == "")
+                     {
+                     alert("You must Enter Username");
+                     theForm.p_dealerid.focus();
+                     return (false);
+                      }
+                     if (theForm.p_password.value == "")
+                     {
+                     alert("You must Enter Password");
+                     theForm.p_password.focus();
+                     return (false);
+                      }
+                      document.close;
+                     window.close;  
+                    // return (true);
+                     }
+
+                     //--></script>
+<link rel="stylesheet" href="../admin/arshilogin.css" type="text/css">
+<title>User's Login Window:</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body {
+	background-color: #B5C7EF;
+}
+-->
+</style></head>
+<body leftmargin="0" topmargin="0" onload="document.Form1.p_dealerid.focus()" >
+<FORM action="admin/login_dealer.asp" method="post"  name="Form1">
+  <table background="" border=0 cellpadding=0 cellspacing=0 
+style="WIDTH: 505px; HEIGHT: 152px" width="505" bordercolor="#6699cc">
+    <tr bgcolor="#000000"> 
+      <td height="56" colspan="3"> 
+        <h1><font size="6" face="Verdana, Arial, Helvetica, sans-serif" color="#cc6633">User<font face="Verdana, Arial"> 
+      Login: </font></font></h1>      </td>
+    </tr>
+    <tr> 
+      <td width="50" bgcolor="#FFFFFF"><font color="#ff0000" size="2"><a class=links1 href="javascript:window.open('adealers/signup.asp','arshimain');window.close()"
+      >NEW USER</a></font></td>
+      <td width="114" bgcolor="#FFFFFF">&nbsp;</td>
+      <td colspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="50" bgcolor="#FFFFFF"></td>
+      <td width="114" bgcolor="#FFFFFF"> 
+        <div align="right"><font color="#ff0000" size="2"></font></div>
+      </td>
+      <td colspan="2" align="middle"  bgcolor="#FFFFFF"> 
+        <div align="left"><font color="#ff0000" size="2"></font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="50" bgcolor="#FFFFFF"></td>
+      <td width="114" bgcolor="#FFFFFF">&nbsp;</td>
+      <td colspan="2" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="50"></td>
+      <td width="114">&nbsp;</td>
+      <td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#CC3333">Approved 
+        User Only</font></td>
+    </tr>
+    <tr> 
+      <td width="50"></td>
+      <td width="114"><b><font color="#333399"><font color="#0000cc"><span class="text"><font color="#cc6633">User 
+        ID:</font></span></font></font></b><font color="#cc6633"><span class="text">&nbsp; 
+        </span> </font></td>
+      <td colspan="2"> 
+        <input name="p_dealerid" size="28" >
+      </td>
+    </tr>
+    <tr> 
+      <td width="50"></td>
+      <td width="114"><STRONG><font color="#333399" face="Verdana" size="2"><font color="#0000cc"><span class="text"><font color="#cc6633">Password</font></span></font></font><font color="#cc6633"><span class="text"> 
+        :</span></font></STRONG> </td>
+      <td colspan="2"> 
+        <input id=password1 name="p_password" type=password size="28">
+      </td>
+    </tr>
+    <tr> 
+      <td width="50"></td>
+      <td width="114"></td>
+      <td colspan="2"> 
+        <div align="left"> 
+          <input  name="submitB" type="submit" value="Submit">
+          <input id=reset1 name=reset12 type=reset value=Reset>
+          <input id=reset1 name=reset122 type=button value=Close onclick=window.close()>
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="50" align="right"><font color=#ff0000><A class=links1 href="admin/forgotPWD.asp?act=Member"><font color="#ffcc66"></font></a></font></td>
+      <td width="114" align="right"></td>
+      <td align="centre" ><font color="#ff0000" size="2"> 
+        <input type="checkbox" name="editprofileb" value="yes">
+        Edit Profile</font></td>
+    </tr>
+    <tr> 
+      <td width="50" align="right">&nbsp;</td>
+      <td width="114" align="right"></td>
+      <td width="115" align="right" height="19"> 
+        <div align="left"><font color="#ff0000" size="2"><A class=links1 href="admin/ChangePWDmembers.asp?act=dealer">Change 
+          Password</a></font></div>
+      </td>
+    </tr>
+    <tr > 
+      <td width="50" height="19" align="right" "> 
+        <div align="center"></div>      </td>
+      <td width="114" height="19" align="middle"> 
+        <div align="center"></div>      </td>
+      <td width="139" align="left" height="19"> 
+        <div align="left"><font color="#ff0000" size="2"><A class=links1 href="admin/forgotPWD.asp?act=dealer">Forgot 
+          my Password</a> </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="50" height="10" align="right" >&nbsp;</td>
+      <td width="114" height="10" align="middle">&nbsp;</td>
+      <td width="137" height="10" align="left">&nbsp;</td>
+    </tr>
+  </table>
+</FORM>
+</body></HTML>

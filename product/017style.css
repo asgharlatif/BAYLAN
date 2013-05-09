@@ -1,0 +1,64 @@
+.fstyle1 { 
+font-family : Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : bolder; 
+background : url(017bg.gif); 
+} 
+.fstyle2 { 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : normal; 
+color : #fff; 
+} 
+.fstyle3 { 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 12px; 
+font-weight : bold; 
+background : url(017group.gif); 
+} 
+.fstyle4 { 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 18px; 
+font-weight : bold; 
+} 
+.fstyle5 { 
+font-family : Verdana, Arial, Helvetica, sans-serif; 
+font-size : 10px; 
+font-weight : bold; 
+} 
+.fstyle6 { 
+background : url(underline.gif) top; 
+background-repeat : repeat-x; 
+} 
+.text4 { 
+color : black; 
+font-family : Arial, Helvetica, sans-serif; 
+font-size : 11px; 
+background : url(017pbg.gif); 
+} 
+.t { 
+background : url(017top.gif) repeat-x 0% 0%; 
+width : 800px; 
+} 
+.b { 
+background : url(017bottom.gif) repeat-x 0% 100%; 
+} 
+.l { 
+background : url(017leftside.gif) repeat-y 0% 0%; 
+} 
+.r { 
+background : url(017rightside.gif) repeat-y 100% 0%; 
+} 
+.bl { 
+background : url(017bottom-left.gif) no-repeat 0% 100%; 
+} 
+.br { 
+background : url(017bottom-right.gif) no-repeat 100% 100%; 
+} 
+.tl { 
+background : url(017top-left.gif) no-repeat 0% 0%; 
+} 
+.tr { 
+background : url(017top-right.gif) no-repeat 100% 0%; 
+padding-bottom : 55px; 
+}

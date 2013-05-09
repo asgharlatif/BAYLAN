@@ -1,0 +1,43 @@
+<html>
+
+
+
+<head></head>
+<body>
+
+<div id="divaaaaa"></div>
+
+
+</body>
+
+</html>
+
+
+<script  type="text/javascript">
+    (function(){
+
+
+        if (typeof jQuery == 'undefined') {
+            // load jquery
+
+            var script = document.createElement('script');
+            script.type = "text/javascript";
+            script.src = "JQuery/jquery-1.8.3.min.js";
+
+            document.getElementsByTagName('head')[0].appendChild(script);
+
+
+
+        } else {
+            //already loaded
+        }
+
+
+
+    })();
+</script>
+
+        <script type="text/javascript">
+            $(alert("adsadas"));
+            $('#divaaaaa').html()
+        </script>

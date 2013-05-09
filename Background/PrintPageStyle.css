@@ -1,0 +1,27 @@
+﻿.PrintPage
+{
+    border: 0px solid #FF0000;
+    
+    
+    
+}
+.SetBackgroung
+{
+    background-image: url('BCPP1.jpg');
+    background-repeat: repeat;
+}
+
+
+.PrintPage .PrintPageTd1
+{
+    width: 20px;
+    background-image: url('BCPL1.jpg') !important;
+    background-repeat: repeat;
+}
+
+.PrintPage .PrintPageTd2
+{
+    background-image: url('BCPR1.jpg') !important;
+    background-repeat: repeat;
+    width: 20px;
+}

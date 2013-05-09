@@ -1,0 +1,31 @@
+﻿
+
+.txt-email
+{
+    width:250px;
+    
+}
+.email-content
+{
+    
+    background-color: #f3f3f3;
+    width: 540px;
+    height: 80px;
+    padding-left: 0px;
+    padding-right: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.centeralignlabeling
+{
+    font-family: 'Trebuchet MS' , 'Lucida Sans Unicode' , 'Lucida Grande' , 'Lucida Sans' , Arial, sans-serif;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000080;
+}
+
+.block { background-color: #0ff; width: 100px; height: 100px; margin-right: 10px; margin-bottom: 10px; float: left; }
+.clear { clear: both; }
